@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1 id="title">Unit Converter</h1>
+
+    <input type="number" oninput="inputValue = this.value" placeholder="10">
+
+    <select oninput="milesToKm = this.value;">
+      <option value="true">Miles to Kilometers</option>
+      <option value="false">Kilometers to Miles</option>
+    </select>
+<button onclick="convert()">Convert!</button>
+   <h2 id="resultElement">Result:</p>
+
+    <script src="script.js"></script>
+  </body>
+</html>

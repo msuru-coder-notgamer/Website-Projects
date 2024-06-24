@@ -1,0 +1,53 @@
+button {
+  width: 300px;
+  height: 150px !important;
+  background-color: white;
+  z-index: 3;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ccc;
+}
+
+img {
+  transform: translateX(-50px);
+  transition: ease-out 0.2s;
+  position: relative;
+  z-index: 1;
+}
+
+#img2 {
+  transform: translateX(50px) translateY(-35px);
+  position: relative;
+}
+
+body {
+  background-image: linear-gradient(to bottom, red, orange);
+}
+
+div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background-image: linear-gradient(to bottom, red, orange);
+}
+
+#div {
+  position: relative;
+  z-index: 2;
+  height: 300px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+
+p::first-letter {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(211, 0, 0);
+}
