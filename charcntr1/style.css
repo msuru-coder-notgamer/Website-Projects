@@ -1,0 +1,10 @@
+textarea {
+    resize: none;
+    width: 450px;
+    height: 350px;
+    background-color: rgb(255, 246, 230);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body {
+    background-image: linear-gradient(to right, white, rgb(255, 246, 230));
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css" />
+		<title>CALCULATOR IN HTML!</title>
+	</head>
+	<body>
+		<div id="calc">
+			<div id="answer">0</div>
+
+			<button onclick="c()" class="c-d-more">C</button>
+			<button onclick="del()" class="c-d-more">D</button>
+			<button onclick="more()" class="c-d-more">More...</button>
+			<br />
+			<button onclick="num('1')" class="nums1-9">1</button>
+			<button onclick="num('2')" class="nums1-9">2</button>
+			<button onclick="num('3')" class="nums1-9">3</button>
+			<button onclick="sym('+')">+</button>
+			<br />
+			<button onclick="num('4')" class="nums1-9">4</button>
+			<button onclick="num('5')" class="nums1-9">5</button>
+			<button onclick="num('6')" class="nums1-9">6</button>
+			<button onclick="sym('-')">-</button>
+			<br />
+			<button onclick="num('7')" class="nums1-9">7</button>
+			<button onclick="num('8')" class="nums1-9">8</button>
+			<button onclick="num('9')" class="nums1-9">9</button>
+			<button onclick="sym('*')">*</button>
+			<br />
+			<button onclick="brackets()">( )</button>
+			<button onclick="num('0')">0</button>
+			<button onclick="equals()">=</button>
+			<button onclick="sym('.')">.</button>
+			<button onclick="sym('/')">/</button>
+		</div>
+		<div id="more">
+			<button class="more-buttons" onclick="advanced('sin')">SIN</button>
+			<button class="more-buttons" onclick="advanced('cos')">COS</button>
+			<button class="more-buttons" onclick="advanced('tan')">TAN</button>
+			<button class="more-buttons" onclick="advanced('floor')">FLOOR</button>
+			<button class="more-buttons" onclick="advanced('ceil')">CEILING</button>
+			<button class="more-buttons" onclick="advanced('sqrt')">SQRT</button>
+			<button class="more-buttons" onclick="advanced('abs')">ABS</button>
+			<button class="more-buttons" onclick="advanced('pi')">π</button>
+			<button class="more-buttons" onclick="advanced('e')">e</button>
+			<button id="X" onclick="more('false')">X</button>
+		</div>
+		<script src="more.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>

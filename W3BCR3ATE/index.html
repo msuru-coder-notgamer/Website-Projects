@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="style.css" rel="stylesheet" />
+		<title>W3BCR3ATE</title>
+	</head>
+
+	<body>
+		<button id="htmlbutton" onclick="html()">HTML</button>
+		<button id="cssbutton" onclick="css()">CSS</button>
+		<button id="jsbutton" onclick="js()">JS</button>
+		<br />
+		<textarea id="htmlInp" oninput="upd()" placeholder="HTML goes here">
+<html>
+  <head>
+    <title>W3BCR3ATE</title>
+  </head>
+  <body>
+    <h1>Hello world!</h1>
+  </body>
+</html>
+    </textarea>
+
+		<textarea id="cssInp" oninput="upd()" placeholder="CSS goes here">
+body {
+  background-color: lightblue;
+}
+    </textarea>
+
+		<textarea id="jsInp" oninput="upd()" placeholder="JS goes here"></textarea>
+
+		<button id="fullscr" onclick="full()">
+			<strong>⛶</strong>
+		</button>
+		<iframe id="output" srcdoc></iframe>
+
+		<script src="script.js"></script>
+	</body>
+</html>
